@@ -30,5 +30,5 @@ list      --list virtual environments
 # venvff create --help
 Optional parameters:
 --desc     -describe new virtual environment
---params   -provide additional options provided by virtualenv, separated by semicolon. For example 'python=python3.5;no-download;no-pip'
+--params   -set additional options provided by virtualenv, separated by semicolon. For example 'python=python3.5;no-download;no-pip'
 ```
