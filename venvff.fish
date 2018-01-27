@@ -97,7 +97,7 @@ function venvff
       case 'create'
         echo "Optional parameters:"
         echo "--desc     -describe new virtual environment"
-        echo "--params   -provide additional comman separated parameters privided by virtualenv tool"
+        echo "--params   -provide additional options provided by virtualenv, separated by semicolon provided by virtualenv. For example 'python=python3.5;no-download;no-pip'"
       case '*'
         echo "Usage: venvff [-h|--help] [--optional] [positional] [NAME]"
         echo "Python virtualenv management for fish shell"

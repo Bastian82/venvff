@@ -25,3 +25,10 @@ workon    --switch virtual environment
 exit      --deactivate current virtual environment
 list      --list virtual environments
 ```
+
+```bash
+# venvff create --help
+Optional parameters:
+--desc     -describe new virtual environment
+--params   -provide additional options provided by virtualenv, separated by semicolon. For example 'python=python3.5;no-download;no-pip'
+```
