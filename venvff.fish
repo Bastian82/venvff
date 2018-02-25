@@ -48,8 +48,14 @@ function venvff
     set name $argv[1]
     set date (date "+%F %T")
     set r "s/last>.*/last>"$date"/g"
-    sed -i -E $r $venvff_dir/$name/.venff_meta
-    source $venvff_dir/$name/bin/activate.fish
+    if [ -e $venvff_dir/$name/.venff_meta ]
+      sed -i -E $r $venvff_dir/$name/.venff_meta
+      source $venvff_dir/$name/bin/activate.fish
+    else
+      set_color red
+      echo "Project $name does not exists"
+      set_color normal
+    end
   end
   
   function destroy
